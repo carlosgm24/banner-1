@@ -1,0 +1,16 @@
+// colors
+$primary-color: #444444;
+$secondary-color: #006998; 
+$primary-theme-color: #005480; //Blue
+$secondary-theme-color: #b2b2b2; //Gray
+$tertiary-theme-color: #39a3e0; //Light Blue
+
+// Font
+$primary-theme-font: 'Arial';
+$secondary-theme-font: Helvetica, sans serif;
+
+$primary-theme-font-family: $primary-theme-font, $secondary-theme-font;
+
+// Sizes
+$banner-width: 300px !default;
+$banner-height: 250px !default;

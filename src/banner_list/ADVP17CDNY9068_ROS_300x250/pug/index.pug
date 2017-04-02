@@ -1,0 +1,46 @@
+extends ../../../pug/layout
+block metaSize
+	meta(name="ad.size", content='width=300,height=250')
+
+block content
+	#step-1.wrapper.white-state.centered-layout.step(data-order=1)
+		.layout
+			.main-container
+				.frame1-container
+					div.motion-wrapper
+						div.top
+						div.middle
+						div.middle
+						div.middle
+				.frame2-container
+					.title
+						p In case you missed it
+						img(src="images/colon.png", alt="", target="_blank")
+				.frame3-container
+					.title 
+						img(src="images/frame3-title.png", alt="")
+						img(src="images/colon.png", alt="")
+					.subtitle
+						p Nothing is proven to <br/>work faster, stronger, <br/>or longer than Advil<sup>®</sup>*
+					.disclaimer
+						p *Among OTC analgesics.
+				.frame4-container
+					.title 
+						p We’re just used <br/>to working fast
+					.pack-shot
+						img(src="images/pack-shot.png", alt="")
+				.frame5-container
+					.title 
+						img(src="images/frame3-title.png", alt="")
+						img(src="images/colon.png", alt="")
+					.subtitle
+						p Nothing is proven to work faster, <br/>stronger, or longer than Advil<sup>®</sup>* <span>Recommend the #1-selling OTC pain reliever today</span>
+					.cta
+						img(src="images/cta.png", alt="")
+					.pfizer-logo
+						img(src="images/pfizer-logo.png", alt="")
+					.disclaimer
+						p *Among OTC analgesics.
+					.legal
+						p ADV021702   2/17
+

@@ -1,0 +1,181 @@
+$banner-width: 600px;
+$banner-height: 250px;
+
+@import "../../../styles/main";
+
+.step[data-order="1"] {
+    font-family: $primary-theme-font-family;
+
+    //Css gradient        
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f5fc+0,edf4fa+20,cbddea+36,cbddea+50,dce7f0+78,e0ebf4+100 */
+    // background: #f0f5fc; /* Old browsers */
+    // background: -moz-linear-gradient(top,  #f0f5fc 0%, #edf4fa 20%, #cbddea 36%, #cbddea 50%, #dce7f0 78%, #e0ebf4 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top,  #f0f5fc 0%,#edf4fa 20%,#cbddea 36%,#cbddea 50%,#dce7f0 78%,#e0ebf4 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom,  #f0f5fc 0%,#edf4fa 20%,#cbddea 36%,#cbddea 50%,#dce7f0 78%,#e0ebf4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f5fc', endColorstr='#e0ebf4',GradientType=0 ); /* IE6-9 */
+    background: #9ecbca;
+
+    a { 
+        outline: none;
+    }
+
+    .scale0 {
+        transform: scale(0);
+    }
+
+    .opacity0 {
+        opacity: 0;
+    }
+
+    .height0 {
+        height: 0;
+        overflow: hidden;
+    }
+
+    p{
+        color: $primary-theme-color;
+        text-align: left;
+        font-size: 37.5px;
+        font-weight: bold;
+    }
+
+    .main-container {
+        height: $banner-height;
+        overflow: hidden;
+
+        .frame1-container{
+            position: relative;
+            @include size(600px, 250px);
+
+            img:nth-child(1){
+                top: 30px;
+            }
+
+            .special{
+                top: 55px;
+            }
+
+            img:nth-child(3){
+                top: 80px;
+            }
+        }
+
+        .frame2-container{
+            .title{
+                @include absolute(0px, auto, auto, 0px);
+
+                img:nth-child(1){
+                    top: 33px;
+                }
+
+                img:nth-child(2){
+                    top: -92px;
+                    left: 245px;
+                }
+            }
+        }
+
+        .frame3-container{
+            .title{
+                @include absolute(0px, auto, auto, 0px);
+
+                img{
+                    top: 100px;
+                    left: 230px;
+                }
+            }
+        }
+
+        .frame4-container{
+            .title{
+                @include absolute(21px, auto, auto, 33px);
+
+                img:nth-child(1){
+                    top: -44px;
+                    left: 74px;
+                }
+
+                img:nth-child(2){
+                    top: 95px;
+                    left: -115px;
+                }
+
+                p{
+                    font-size: 8px;
+                    color: #fff;
+                    left: 228px;
+                    top: 35px;
+                    width: 260px;
+                }
+            }
+        }
+
+        .frame5-container{
+            .title{
+                @include absolute(17px, auto, auto, 30px);
+
+                :first-child{
+                    @include size(242px, 85px);
+                }
+
+                :last-child{
+                    @include absolute(10px, auto, auto, 181px);
+                }
+            }
+            .subtitle{
+                @include absolute(60px, auto, auto, 16px);   
+
+                p{
+                    font-size: 16.67px;
+                    letter-spacing: 0.3px;
+                    line-height: 19px;
+
+                    span{
+                        font-size: 10.5px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .cta{
+                @include absolute(169px, 35px, auto, auto);   
+            }
+            .legal{
+                @include absolute(224px, 12px, auto, auto); 
+
+                p{
+                    font-size: 9px;
+                    font-weight: normal;
+                    font-family: $secondary-theme-font;
+                    color: $secondary-theme-color;
+                }   
+            }
+            .disclaimer{
+                @include absolute(209px, 12px, auto, auto); 
+
+                p{
+                    font-size: 7.86px;
+                    font-weight: normal;
+                }   
+            }
+            .pfizer-logo{
+                @include absolute(224px, auto, auto, 11px);   
+            }
+        }
+
+        .special{
+            border-color: white;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 2px;
+        }
+    }
+
+    .legal{
+        position: absolute;
+        font-size: 7px;
+        bottom: 12px;
+        right: 20px;
+        color: $secondary-theme-color;
+        font-family: $primary-theme-font-family;
+    }
+}
